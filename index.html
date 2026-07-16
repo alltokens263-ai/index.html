@@ -77,23 +77,22 @@
     margin-bottom:0;
 }
         body {
-            background-image: url('https://i.ibb.co/1fTzPxjB/image.jpg');
-        
-            background-size: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin: 0;
-            height: 100vh;
-            
-            font-family: Arial, sans-serif;
-            color: blue;
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+          
+    margin:0;
+    min-height:100vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        url('https://i.ibb.co/1fTzPxjB/image.jpg') center center/cover no-repeat fixed;
+
+    font-family:Arial,sans-serif;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
         }
         .contenedor {
             background-color: rgba(0, 0, 0, 0.7);
