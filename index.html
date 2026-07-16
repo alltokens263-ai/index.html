@@ -8,6 +8,48 @@
       <link rel="icon" href="https://i.ibb.co/20jJYzms/Whats-App-Image-2026-07-10-at-4-22-55-PM.jpg">
     
     <style>
+        .titulo-billeteras{
+    margin-top:30px;
+    margin-bottom:15px;
+    font-size:24px;
+    color:#fff;
+}
+
+.billeteras{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.wallet{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+    font-weight:bold;
+}
+
+.wallet img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    background:white;
+    border-radius:50%;
+    padding:8px;
+    transition:.3s;
+}
+
+.wallet img:hover{
+    transform:scale(1.15);
+    box-shadow:0 0 15px rgba(255,255,255,.6);
+}
+
+.wallet p{
+    margin-top:8px;
+    font-size:16px;
+}
         .redes-logo{
     display:flex;
     align-items:center;
@@ -99,7 +141,29 @@
         <p>Vota por All Tokens World y gana 5 WDD,  0.02 WLD o 0.01 USD. 🎁🎁</p>
         <a href="https://www.worldrepublic.org/es/govern/parties/a6a92b4e-986f-4fe0-8bce-2b0cd8898775?ref=UNDBKRJD" target="_blank" class="boton-votar">👉🗳️ VOTA AHORA 🗳️👈</a>
     </div>
+<h2 class="titulo-billeteras">💳 Billeteras de retiro</h2>
 
+<div class="billeteras">
+
+    <div class="wallet">
+        <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=040"
+             alt="Binance">
+        <p>Binance</p>
+    </div>
+
+    <div class="wallet">
+        <img src="https://cryptologos.cc/logos/coinbase-coin-logo.png?v=040"
+             alt="Coinbase">
+        <p>Coinbase</p>
+    </div>
+
+    <div class="wallet">
+        <img src="https://cryptologos.cc/logos/worldcoin-wld-logo.png?v=040"
+             alt="Worldcoin">
+        <p>World App</p>
+    </div>
+
+</div>
 </body>
 </html>
 
