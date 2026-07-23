@@ -8,6 +8,34 @@
       <link rel="icon" href="https://i.ibb.co/20jJYzms/Whats-App-Image-2026-07-10-at-4-22-55-PM.jpg">
     
     <style>
+        @media(max-width:768px){
+
+.menu{
+    flex-wrap:wrap;
+    gap:8px;
+    padding:10px;
+}
+
+.menu a{
+    font-size:14px;
+    padding:8px 12px;
+}
+
+.logo{
+    width:120px;
+    height:120px;
+}
+
+.icono-red{
+    width:45px;
+    height:45px;
+}
+
+.billeteras{
+    gap:15px;
+}
+
+}
         .menu{
     position:fixed;
     top:0;
@@ -58,7 +86,7 @@
     margin-top:30px;
     margin-bottom:15px;
     font-size:24px;
-    color:withe;
+    color:white;
 }
 
 .billeteras{
@@ -122,12 +150,10 @@
     filter:drop-shadow(10px 15px 10px rgba(0,0,0,.5));
     margin-bottom:0;
 }
-        body 
         body{
-    padding-top:80px;
-}{
-          
+        
     margin:0;
+    padding-top:80px;
     min-height:100vh;
 
     background:
@@ -161,6 +187,7 @@
         }
     </style>
 </head>
+  </div>  
 <body>
 
     <nav class="menu">
@@ -176,10 +203,12 @@
        rel="noopener noreferrer">
        🌎 All Tokens
     </a>
-
-    <a href="#dexscanner">
-       📈 DEXScreener
-    </a>
+        
+<a href="https://dexscreener.com"
+   target="_blank"
+   rel="noopener noreferrer">
+    📈 DEXScreener
+</a>
 
 </nav>
     <div class="contenedor">
@@ -227,6 +256,22 @@
              alt="Worldcoin">
         <p>World App</p>
     </div>
+    <section id="dexscanner">
+
+    <h2>📈 DEXScreener</h2>
+
+    <p>
+        Consulta el precio, volumen, liquidez y gráficos en tiempo real.
+    </p>
+
+    <a href="https://dexscreener.com/"
+       class="boton-votar"
+       target="_blank"
+       rel="noopener noreferrer">
+       Ver en DEXScreener
+    </a>
+
+</section>
     
 
 </body>
