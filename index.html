@@ -8,6 +8,33 @@
       <link rel="icon" href="https://i.ibb.co/20jJYzms/Whats-App-Image-2026-07-10-at-4-22-55-PM.jpg">
     
     <style>
+        .menu{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,.85);
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    z-index:1000;
+    backdrop-filter:blur(8px);
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:10px 18px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    background:#00bfff;
+    color:black;
+}
         .boton-votar{
     display:inline-block;
     margin-top:20px;
@@ -95,7 +122,10 @@
     filter:drop-shadow(10px 15px 10px rgba(0,0,0,.5));
     margin-bottom:0;
 }
-        body {
+        body 
+        body{
+    padding-top:80px;
+}{
           
     margin:0;
     min-height:100vh;
@@ -133,6 +163,25 @@
 </head>
 <body>
 
+    <nav class="menu">
+
+    <a href="https://world.org/mini-app?app=futurex"
+       target="_blank"
+       rel="noopener noreferrer">
+       🚀 FutureX
+    </a>
+
+    <a href="https://world.org/mini-app?app=alltokens"
+       target="_blank"
+       rel="noopener noreferrer">
+       🌎 All Tokens
+    </a>
+
+    <a href="#dexscanner">
+       📈 DEXScreener
+    </a>
+
+</nav>
     <div class="contenedor">
          <div class="redes-logo">
 
