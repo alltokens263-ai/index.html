@@ -558,28 +558,7 @@ player.play();
 cargar();
 
 </script>
-    <audio id="musica" loop>
-    <source src="2Pac ft. Gwen Stefani - Let Me Blow Ya Love (Lej Edit).mp3" type="audio/mpeg">
-</audio>
-
-<button id="btnMusica" class="boton-musica">
-🎵 Música ON
-</button>
-
-<script>
-const musica = document.getElementById("musica");
-const boton = document.getElementById("btnMusica");
-
-boton.onclick = function(){
-    if(musica.paused){
-        musica.play();
-        boton.innerHTML="🔊 Música OFF";
-    }else{
-        musica.pause();
-        boton.innerHTML="🎵 Música ON";
-    }
-};
-</script>
+    
 
 <!-- ===== MENU ===== -->
 
