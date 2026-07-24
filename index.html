@@ -1,351 +1,647 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Tokens World 🌎</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <link rel="icon" href="https://i.ibb.co/20jJYzms/Whats-App-Image-2026-07-10-at-4-22-55-PM.jpg">
-    
-    <style>
-        @media(max-width:768px){
+<title>All Tokens World 🌎</title>
 
-.menu{
-    flex-wrap:wrap;
-    gap:8px;
-    padding:10px;
-}
+<link rel="icon" href="https://i.ibb.co/20jJYzms/Whats-App-Image-2026-07-10-at-4-22-55-PM.jpg">
 
-.menu a{
-    font-size:14px;
-    padding:8px 12px;
+<style>
+
+/* ===== CONFIGURACIÓN GENERAL ===== */
+
+*{
+    box-sizing:border-box;
 }
 
-.logo{
-    width:120px;
-    height:120px;
-}
+body{
 
-.redes-logo{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin-top:50px;
-    margin-bottom:40px;
-}
-
-.redes{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-bottom:20px;
-}
-
-.logo{
-    width:185px;
-    height:185px;
-    object-fit:contain;
-    filter:drop-shadow(10px 15px 10px rgba(0,0,0,.5));
-}
-            
-.icono-tiktok{
-    width:45px;
-    height:45px;
-    margin-top:15px;
-    transition:.3s;
-    cursor:pointer;
-    background:white;
-    border-radius:50%;
-    padding:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,.4);
-}
-
-
-.icono-tiktok:hover{
-    transform:scale(1.15);
-}
-
-.billeteras{
-    gap:15px;
-}
-
-}
-        .menu{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:rgba(0,0,0,.85);
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    padding:15px;
-    z-index:1000;
-    backdrop-filter:blur(8px);
-}
-
-.menu a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    padding:10px 18px;
-    border-radius:30px;
-    transition:.3s;
-}
-
-.menu a:hover{
-    background:#00bfff;
-    color:black;
-}
-        .boton-votar{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 35px;
-    background:linear-gradient(45deg,#0066ff,#00ccff);
-    color:white;
-    text-decoration:none;
-    font-size:22px;
-    font-weight:bold;
-    border-radius:50px;
-    box-shadow:0 5px 15px rgba(0,0,0,.5);
-    transition:.3s;
-}
-
-.boton-votar:hover{
-    background:linear-gradient(45deg,#00ccff,#0066ff);
-    transform:scale(1.08);
-}
-
-        .titulo-billeteras{
-    margin-top:30px;
-    margin-bottom:15px;
-    font-size:24px;
-    color:white;
-}
-
-.billeteras{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-.wallet{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    color:white;
-    font-weight:bold;
-}
-
-.wallet img{
-    width:70px;
-    height:70px;
-    object-fit:contain;
-    background:white;
-    border-radius:50%;
-    padding:8px;
-    transition:.3s;
-}
-
-.wallet img:hover{
-    transform:scale(1.15);
-    box-shadow:0 0 15px rgba(255,255,255,.6);
-}
-
-.wallet p{
-    margin-top:8px;
-    font-size:16px;
-}
-       .redes-logo{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:25px;
-    margin-top:50px;
-    margin-bottom:40px;
-}
-
-.icono-red{
-    width:60px;
-    height:60px;
-    transition:0.3s;
-    cursor:pointer;
-}
-
-.icono-red:hover{
-    transform:scale(1.15);
-}
-.icono-tiktok{
-    width:45px;
-    height:45px;
-    margin-top:15px;
-    transition:.3s;
-    cursor:pointer;
-    background:white;
-    border-radius:50%;
-    padding:10px;
-    object-fit:contain;
-    box-shadow:0 5px 15px rgba(0,0,0,.4);
-}
-
-.icono-tiktok:hover{
-    transform:scale(1.15);
-}
-.logo{
-    width:185px;
-    height:185px;
-    object-fit:contain;
-    filter:drop-shadow(10px 15px 10px rgba(0,0,0,.5));
-    margin-bottom:0;
-}
-        body{
-        
     margin:0;
-    padding-top:80px;
+    padding-top:90px;
     min-height:100vh;
 
     background:
-        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-        url('https://i.ibb.co/1fTzPxjB/image.jpg') center center/cover no-repeat fixed;
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+    url('https://i.ibb.co/1fTzPxjB/image.jpg')
+    center/cover fixed no-repeat;
 
-    font-family:Arial,sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     color:white;
 
     display:flex;
     justify-content:center;
-    align-items:center;
     text-align:center;
 }
-        }
-        .contenedor{
-    background:rgba(0,0,0,.65);
+
+
+/* ===== MENU SUPERIOR ===== */
+
+.menu{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:rgba(0,0,0,.85);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:20px;
+    padding:15px;
+
+    z-index:1000;
+
     backdrop-filter:blur(8px);
-    padding:30px;
-    border-radius:25px;
-    max-width:900px;
-    width:95%;
 }
-        /* Logotipo reducido a tamaño mini (35px) */
-        .logo {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-            margin-bottom: 70px; /* Reducido levemente para mantener armonía */
-            filter: drop-shadow(10px 15px 10px rgba(0, 0, 0, 0.5));
-        }
-    </style>
-</head>
-  </div>  
+
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+
+.menu a:hover{
+
+    background:#00ccff;
+
+    color:black;
+
+}
+
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+
+.contenedor{
+
+    width:95%;
+    max-width:900px;
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(8px);
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.5);
+
+}
+
+
+
+/* ===== REDES SOCIALES ===== */
+
+.redes-logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-top:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+.redes{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.icono-red{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.icono-red:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+
+/* ===== TIKTOK ===== */
+
+.icono-tiktok{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:50%;
+
+    padding:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.4);
+
+}
+
+
+.icono-tiktok:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+
+/* ===== LOGO REPUBLIC ===== */
+
+.logo{
+
+    width:185px;
+
+    height:185px;
+
+    object-fit:contain;
+
+    filter:
+    drop-shadow(
+    10px 15px 10px rgba(0,0,0,.5)
+    );
+
+}
+
+
+
+/* ===== BOTÓN VOTAR ===== */
+
+.boton-votar{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:15px 35px;
+
+    background:
+    linear-gradient(
+    45deg,
+    #0066ff,
+    #00ccff
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    border-radius:50px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.5);
+
+    transition:.3s;
+
+}
+
+
+.boton-votar:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+/* ===== BILLETERAS ===== */
+
+.titulo-billeteras{
+
+    margin-top:35px;
+
+    font-size:24px;
+
+}
+
+
+.billeteras{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.wallet{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    font-weight:bold;
+
+}
+
+
+.wallet img{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:50%;
+
+    padding:8px;
+
+    transition:.3s;
+
+}
+
+
+.wallet img:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+
+/* ===== DEXSCREENER ===== */
+
+#dexscanner{
+
+    margin-top:40px;
+
+}
+
+
+#dexscanner h2{
+
+    font-size:28px;
+
+}
+
+
+
+/* ===== MOVILES ===== */
+
+@media(max-width:768px){
+
+
+.menu{
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    padding:10px;
+
+}
+
+
+.menu a{
+
+    font-size:14px;
+
+    padding:8px 12px;
+
+}
+
+
+.contenedor{
+
+    padding:20px;
+
+}
+
+
+.icono-red{
+
+    width:45px;
+
+    height:45px;
+
+}
+
+
+.icono-tiktok{
+
+    width:45px;
+
+    height:45px;
+
+}
+
+
+.logo{
+
+    width:120px;
+
+    height:120px;
+
+}
+
+
+.billeteras{
+
+    gap:15px;
+
+}
+
+
+}
+
+</style>
+    </head>
+
 <body>
 
-    <nav class="menu">
+<!-- ===== MENU ===== -->
 
-    <a href="https://worldcoin.org/mini-app?app_id=app_b7161b1a08004eed6fdac1ba9ac2ca09&app_mode=mini-app"
-       target="_blank"
-       rel="noopener noreferrer">
-       🚀 FutureX
-    </a>
+<nav class="menu">
 
-    <a href="https://worldcoin.org/mini-app?app_id=app_2b552f2df0dc3093cd2f6a133de2d6de&app_mode=mini-app"
-       target="_blank"
-       rel="noopener noreferrer">
-       🌎 All Tokens
-    </a>
-        
+<a href="https://worldcoin.org/mini-app?app_id=app_b7161b1a08004eed6fdac1ba9ac2ca09&app_mode=mini-app"
+target="_blank"
+rel="noopener noreferrer">
+🚀 FutureX
+</a>
+
+
+<a href="https://worldcoin.org/mini-app?app_id=app_2b552f2df0dc3093cd2f6a133de2d6de&app_mode=mini-app"
+target="_blank"
+rel="noopener noreferrer">
+🌎 All Tokens
+</a>
+
+
 <a href="https://dexscreener.com/worldchain/0xd5a3091f593171e3d28fa39083e99aa1d2947d98"
-   target="_blank"
-   rel="noopener noreferrer">
-    📈 DEXScreener
+target="_blank"
+rel="noopener noreferrer">
+📈 DEXScreener
 </a>
 
 </nav>
-    <div class="redes-logo">
 
-    <div class="redes">
 
-        <a href="https://www.instagram.com/TU_USUARIO" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-                 alt="Instagram"
-                 class="icono-red">
-        </a>
 
-        <a href="https://x.com/TU_USUARIO" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png"
-                 alt="X"
-                 class="icono-red">
-        </a>
+<div class="contenedor">
 
-        <a href="https://chat.whatsapp.com/KfYoXPGIaAsKxrWO9otxcD?s=cl&p=a&ilr=4" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                 alt="WhatsApp"
-                 class="icono-red">
-        </a>
 
-        <a href="https://t.me/AllTokensWorld" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
-                 alt="Telegram"
-                 class="icono-red">
-        </a>
+<!-- ===== REDES Y LOGO ===== -->
 
-        <a href="https://www.tiktok.com/@futurex47?_r=1&_t=ZS-98HXviursTV" target="_blank">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"
-                 alt="TikTok"
-                 class="icono-tiktok">
-        </a>
+<div class="redes-logo">
 
-    </div>
 
-    <img src="https://i.ibb.co/zT3jn9F1/republic.jpg"
-         alt="Logo All Tokens World"
-         class="logo">
+<div class="redes">
+
+
+<a href="https://www.instagram.com/TU_USUARIO"
+target="_blank"
+rel="noopener noreferrer">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+alt="Instagram"
+class="icono-red">
+
+</a>
+
+
+
+<a href="https://x.com/TU_USUARIO"
+target="_blank"
+rel="noopener noreferrer">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png"
+alt="X"
+class="icono-red">
+
+</a>
+
+
+
+<a href="https://chat.whatsapp.com/KfYoXPGIaAsKxrWO9otxcD?s=cl&p=a&ilr=4"
+target="_blank"
+rel="noopener noreferrer">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+alt="WhatsApp"
+class="icono-red">
+
+</a>
+
+
+
+<a href="https://t.me/AllTokensWorld"
+target="_blank"
+rel="noopener noreferrer">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+alt="Telegram"
+class="icono-red">
+
+</a>
+
+
+
+<a href="https://www.tiktok.com/@futurex47?_r=1&_t=ZS-98HXviursTV"
+target="_blank"
+rel="noopener noreferrer">
+
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"
+alt="TikTok"
+class="icono-tiktok">
+
+</a>
+
 
 </div>
 
-        
-        <h1>🌎¡Hola, mundo Bienvenidos a All Tokens World 🌎!</h1>
-        <p>Vota por All Tokens World y gana 10 WDD,  0.04 WLD o 0.02 USD. 🎁🎁</p>
-        <a href="https://www.worldrepublic.org/es/govern/parties/a6a92b4e-986f-4fe0-8bce-2b0cd8898775?ref=UNDBKRJD" target="_blank" class="boton-votar">👉🗳️ VOTA AHORA 🗳️👈</a><h2 class="titulo-billeteras">💳 Billeteras de retiro 💳</h2>
+
+
+<img src="https://i.ibb.co/zT3jn9F1/republic.jpg"
+alt="Logo All Tokens World"
+class="logo">
+
+
+</div>
+
+
+
+
+
+<h1>
+🌎 ¡Hola, mundo! Bienvenidos a All Tokens World 🌎
+</h1>
+
+
+<p>
+Vota por All Tokens World y gana
+<br>
+10 WDD, 0.04 WLD o 0.02 USD 🎁🎁
+</p>
+
+
+
+<a href="https://www.worldrepublic.org/es/govern/parties/a6a92b4e-986f-4fe0-8bce-2b0cd8898775?ref=UNDBKRJD"
+target="_blank"
+rel="noopener noreferrer"
+class="boton-votar">
+
+👉🗳️ VOTA AHORA 🗳️👈
+
+</a>
+
+
+
+
+
+<h2 class="titulo-billeteras">
+💳 Billeteras de retiro 💳
+</h2>
+
+
 
 <div class="billeteras">
 
-    <div class="wallet">
-        <img src="https://i.ibb.co/VpkKH3cn/Binance-Logo.jpg"
-             alt="Binance">
-        <p>Binance</p>
-    </div>
 
-    <div class="wallet">
-        <img src="https://i.ibb.co/Pv5THZpP/coinbase.jpg"
-             alt="Coinbase">
-        <p>Coinbase</p>
-    </div>
 
-    <div class="wallet">
-        <img src="https://i.ibb.co/Ngp265J7/worldapp.jpg"
-             alt="Worldcoin">
-        <p>World App</p>
-    </div>
-    <section id="dexscanner">
+<div class="wallet">
 
-    <h2>📈 DEXScreener</h2>
+<img src="https://i.ibb.co/VpkKH3cn/Binance-Logo.jpg"
+alt="Binance">
 
-    <p>
-        Consulta el precio, volumen, liquidez y gráficos en tiempo real.
-    </p>
+<p>Binance</p>
 
-    <a href="https://dexscreener.com/worldchain/0xd5a3091f593171e3d28fa39083e99aa1d2947d98"
-       class="boton-votar"
-       target="_blank"
-       rel="noopener noreferrer">
-       Ver en DEXScreener
-    </a>
+</div>
+
+
+
+<div class="wallet">
+
+<img src="https://i.ibb.co/Pv5THZpP/coinbase.jpg"
+alt="Coinbase">
+
+<p>Coinbase</p>
+
+</div>
+
+
+
+
+<div class="wallet">
+
+<img src="https://i.ibb.co/Ngp265J7/worldapp.jpg"
+alt="World App">
+
+<p>World App</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<section id="dexscanner">
+
+
+<h2>
+📈 DEXScreener
+</h2>
+
+
+
+<p>
+Consulta precio, volumen, liquidez y gráficos en tiempo real.
+</p>
+
+
+
+<a href="https://dexscreener.com/worldchain/0xd5a3091f593171e3d28fa39083e99aa1d2947d98"
+target="_blank"
+rel="noopener noreferrer"
+class="boton-votar">
+
+Ver en DEXScreener
+
+</a>
+
 
 </section>
-    
+
+
+
+</div>
+
 
 </body>
+
 </html>
