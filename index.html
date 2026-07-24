@@ -9,6 +9,53 @@
 <link rel="icon" href="https://i.ibb.co/20jJYzms/Whats-App-Image-2026-07-10-at-4-22-55-PM.jpg">
 
 <style>
+    .reproductor{
+
+position:fixed;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+
+background:rgba(0,0,0,.75);
+padding:15px 25px;
+
+border-radius:40px;
+
+color:white;
+font-weight:bold;
+
+display:flex;
+align-items:center;
+gap:15px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.5);
+
+z-index:3000;
+
+}
+
+
+.reproductor button{
+
+background:#00bfff;
+border:none;
+
+width:40px;
+height:40px;
+
+border-radius:50%;
+
+font-size:18px;
+cursor:pointer;
+
+}
+
+
+.reproductor button:hover{
+
+transform:scale(1.15);
+
+}
 .boton-musica{
     position:fixed;
     bottom:20px;
@@ -434,6 +481,100 @@ body{
     </head>
 
 <body>
+    <audio id="player"></audio>
+
+<div class="reproductor">
+    <div id="nombreCancion">🎵 All Tokens World Music</div>
+
+    <button onclick="anterior()">⏮</button>
+    <button onclick="playPause()" id="play">▶</button>
+    <button onclick="siguiente()">⏭</button>
+</div>
+
+<script>
+
+const canciones = [
+
+{
+nombre:"🚀 FutureX Space",
+archivo:"musica/futurex.mp3"
+},
+
+{
+nombre:"🌎 All Tokens World",
+archivo:"musica/alltokens.mp3"
+},
+
+{
+nombre:"💎 Web3 Future",
+archivo:"musica/web3.mp3"
+},
+
+{
+nombre:"🔥 Crypto Energy",
+archivo:"musica/crypto.mp3"
+}
+
+];
+
+
+let actual = 0;
+
+const player=document.getElementById("player");
+const nombre=document.getElementById("nombreCancion");
+const boton=document.getElementById("play");
+
+
+function cargar(){
+    player.src=canciones[actual].archivo;
+    nombre.innerHTML=canciones[actual].nombre;
+}
+
+
+function playPause(){
+
+if(player.paused){
+    player.play();
+    boton.innerHTML="⏸";
+}else{
+    player.pause();
+    boton.innerHTML="▶";
+}
+
+}
+
+
+function siguiente(){
+
+actual++;
+
+if(actual>=canciones.length){
+actual=0;
+}
+
+cargar();
+player.play();
+
+}
+
+
+function anterior(){
+
+actual--;
+
+if(actual<0){
+actual=canciones.length-1;
+}
+
+cargar();
+player.play();
+
+}
+
+
+cargar();
+
+</script>
     <audio id="musica" loop>
     <source src="2Pac ft. Gwen Stefani - Let Me Blow Ya Love (Lej Edit).mp3" type="audio/mpeg">
 </audio>
